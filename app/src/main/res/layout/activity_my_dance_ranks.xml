@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar_complex" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="800px"
+            android:layout_height="800px"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/ic_team_wdwd" />
+
+        <Button
+            android:id="@+id/searchTeam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/createTeam"
+            android:layout_margin="20px"
+            android:background="@android:color/holo_blue_bright"
+            android:onClick="onClick"
+            android:text="我是队员,去寻找我的舞队"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/createTeam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20px"
+            android:layout_marginBottom="50px"
+            android:background="@android:color/holo_blue_bright"
+            android:onClick="onClick"
+            android:text="我是领队，创建我的舞队"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+</LinearLayout>

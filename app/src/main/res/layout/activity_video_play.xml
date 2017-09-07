@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/mFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="620px">
+
+        <fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard
+            android:id="@+id/videoplayer"
+            android:layout_width="match_parent"
+            android:layout_height="600px" />
+
+        <ImageView
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_margin="30px"
+            android:background="@mipmap/icon_return"
+            android:onClick="onClick" />
+
+        <ImageView
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_gravity="right"
+            android:layout_margin="30px"
+            android:background="@mipmap/icon_report" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/mBottom"
+        android:layout_below="@+id/mFrameLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px">
+
+                <Button
+                    android:id="@+id/btnDown"
+                    android:layout_width="100px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:background="@null"
+                    android:drawableTop="@mipmap/btn_download"
+                    android:text="下载"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="30px" />
+
+                <Button
+                    android:id="@+id/btnShouCand"
+                    android:layout_width="100px"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/btnDown"
+                    android:layout_marginRight="30px"
+                    android:layout_marginLeft="30px"
+                    android:background="@null"
+                    android:drawableTop="@mipmap/btn_collect"
+                    android:text="收藏"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="30px" />
+
+                <Button
+                    android:layout_width="100px"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/btnShouCand"
+                    android:background="@null"
+                    android:drawableTop="@mipmap/btn_share"
+                    android:text="分享"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="30px" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30px"
+                    android:padding="20px"
+                    android:background="@drawable/videoplay_right_care"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="60px"
+                        android:layout_height="60px"
+                        android:background="@mipmap/icon_tangxd" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5px"
+                        android:text="+关注"
+                        android:textColor="@android:color/holo_orange_light" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15px"
+                android:layout_marginLeft="55px"
+                android:layout_marginTop="15px"
+                android:lines="1"
+                android:text="春天是个哈季节"
+                android:textColor="@android:color/black"
+                android:textSize="45px" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="55px"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="40px"
+                        android:layout_height="40px"
+                        android:layout_gravity="center_vertical"
+                        android:background="@mipmap/icon_item_views" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="31.3万" />
+
+                    <ImageView
+                        android:layout_width="40px"
+                        android:layout_height="40px"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@mipmap/icon_item_comment" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="633" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvbioaqina"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20px"
+                    android:padding="20px"
+                    android:background="@drawable/videoplay_right_care"
+                    android:text="十年河东十年河西"
+                    android:textSize="30px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20px"
+                    android:layout_toLeftOf="@+id/tvbioaqina"
+                    android:text="标签："
+                    android:textSize="30px" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55px"
+                android:layout_marginTop="20px"
+                android:layout_marginBottom="20px"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50px"
+                    android:layout_height="50px"
+                    android:background="@mipmap/btn_like_pre" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10px"
+                    android:layout_marginLeft="10px"
+                    android:text="点赞（2109）"
+                    android:textColor="@android:color/holo_orange_light"
+                    android:textSize="40px" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30px"
+                android:background="@color/colorlightbackground" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/mBottom"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorlightbackground"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_weight="1"
+            android:hint="我也来说几句"
+            android:textSize="30px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="1380条评论"
+            android:textSize="30px" />
+    </LinearLayout>
+</RelativeLayout>

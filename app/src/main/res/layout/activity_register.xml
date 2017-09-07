@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar_complex" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="50px"
+        android:layout_height="147px">
+
+        <EditText
+            android:id="@+id/tv_pw"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="55px"
+            android:layout_marginRight="55px"
+            android:background="@drawable/edittext_bg_selector"
+            android:hint="请输入手机号码"
+            android:inputType="textPassword"
+            android:paddingLeft="30px"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black_50_alpha"
+            android:textSize="38px"
+            android:layout_alignBaseline="@+id/textView2"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="65px"
+            android:gravity="center"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="33px"
+            android:text="获取验证码"
+            android:id="@+id/textView2" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="147px">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="55px"
+            android:layout_marginRight="55px"
+            android:background="@drawable/edittext_bg_selector"
+            android:hint="验证码"
+            android:inputType="textPassword"
+            android:paddingLeft="30px"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black_50_alpha"
+            android:textSize="38px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="65px"
+            android:gravity="center"
+            android:textColor="@color/color_cihei"
+            android:textSize="33px"
+            android:text="收不到验证码?"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="147px">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="55px"
+            android:layout_marginRight="55px"
+            android:background="@drawable/edittext_bg_selector"
+            android:hint="6-16位密码"
+            android:inputType="textPassword"
+            android:paddingLeft="30px"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black_50_alpha"
+            android:textSize="38px" />
+
+    </RelativeLayout>
+    
+    <Button
+        android:id="@+id/bt_register"
+        android:layout_width="976px"
+        android:layout_height="116px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100px"
+        android:text="下一步"
+        android:textColor="@color/white"
+        android:background="@android:color/holo_orange_dark" />
+    
+</LinearLayout>

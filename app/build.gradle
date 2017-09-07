@@ -1,0 +1,48 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    useLibrary 'org.apache.http.legacy' //api 23+ 使用 HttpClient
+    defaultConfig {
+        applicationId "cn.a218.newproject"
+        minSdkVersion 19
+        targetSdkVersion  22
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //视频播放https://github.com/lipangit/JieCaoVideoPlayer
+    //https://github.com/lipangit/JieCaoVideoPlayer/wiki/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98
+    //广告栏最新版本，混淆需要添加https://github.com/youth5201314/banner
+    //http://blog.csdn.net/pengguichu/article/details/55667663
+    compile project(':pullToRefreshLibrary')
+    compile 'com.android.support:appcompat-v7:25.0.3'
+    compile 'com.android.support:design:25.0.0'
+    compile 'com.android.support:support-vector-drawable:23.4.0'
+    compile 'com.zhy:autolayout:1.4.5'
+    compile 'me.relex:circleindicator:1.2.2@aar'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.squareup.picasso:picasso:2.3.2'
+    compile 'fm.jiecao:jiecaovideoplayer:5.5.4'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha2'
+    testCompile 'junit:junit:4.12'
+    compile files('libs/httpmime-4.1.2.jar')
+    compile files('libs/apache-codec.jar')
+    compile files('libs/commons-httpclient.jar')
+}

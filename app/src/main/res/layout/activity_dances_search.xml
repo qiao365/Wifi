@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/index_top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="154px"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/android_title_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="154px"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:onClick="onClick"
+                android:paddingBottom="45px"
+                android:paddingTop="45px"
+                android:src="@drawable/back_selecter" />
+
+            <View
+                android:id="@+id/view_line"
+                android:layout_width="1px"
+                android:layout_height="70px"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_back"
+                android:background="@android:color/black" />
+
+            <EditText
+                android:id="@+id/index_search_edit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="30px"
+                android:layout_marginLeft="60px"
+                android:layout_marginTop="30px"
+                android:layout_weight="1"
+                android:background="@drawable/home_search_top"
+                android:drawableLeft="@mipmap/icon_search"
+                android:gravity="center"
+                android:hint="舞蹈/舞曲/歌名"
+                android:padding="5dp"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="38px" />
+
+            <TextView
+                android:id="@+id/mTextViewSearch"
+                android:layout_width="120px"
+                android:layout_height="80px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="50px"
+                android:layout_marginRight="50px"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="搜索" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorlinedarker_gray" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/mTagViewAll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tag_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="60px"
+                android:paddingRight="60px"
+                android:paddingTop="16.0dip"
+                android:text="附近的人都在搜索"
+                android:textColor="@color/color_shenhui"
+                android:textSize="16.0sp" />
+
+            <cn.a218.newproject.views.tag.TagListView xmlns:f="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/tagview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="60px"
+                android:paddingLeft="60px"
+                android:paddingRight="60px"
+                android:paddingTop="16.0dip"
+                f:horizontalSpacing="@dimen/tag_horizontal_spacing"
+                f:orientation="horizontal"
+                f:verticalSpacing="@dimen/tag_vertical_spacing" />
+        </LinearLayout>
+        <ListView
+            android:id="@+id/mListView"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="match_parent"></ListView>
+    </RelativeLayout>
+</LinearLayout>

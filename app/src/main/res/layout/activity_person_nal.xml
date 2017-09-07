@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar_complex" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30px"
+            android:background="@color/colorlightbackground" />
+
+        <RelativeLayout
+            android:id="@+id/mLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/mTextView_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="52px"
+                android:layout_marginTop="48px"
+                android:layout_toRightOf="@+id/mImageView_me"
+                android:text="我的头像"
+                android:textSize="48px" />
+
+            <ImageView
+                android:layout_width="180px"
+                android:layout_height="180px"
+                android:layout_centerVertical="true"
+                android:layout_margin="20px"
+                android:layout_marginRight="60px"
+                android:layout_toLeftOf="@+id/rightIm"
+                android:background="@mipmap/icon_tangxd" />
+
+            <ImageView
+                android:id="@+id/rightIm"
+                android:layout_width="25px"
+                android:layout_height="30px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="60px"
+                android:background="@mipmap/icon_item_more" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginLeft="60px"
+            android:background="@color/colorlinedarker_gray" />
+
+        <RelativeLayout
+            android:id="@+id/mLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="142px"
+            android:onClick="onClick">
+
+            <TextView
+                android:id="@+id/mTextView_about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="52px"
+                android:layout_marginTop="48px"
+                android:layout_toRightOf="@+id/mImageView_about"
+                android:text="我的昵称"
+                android:textSize="48px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="52px"
+                android:layout_marginTop="48px"
+                android:layout_toLeftOf="@+id/mTextView_Name"
+                android:text="沉默实际"
+                android:textSize="38px" />
+
+            <ImageView
+                android:id="@+id/mTextView_Name"
+                android:layout_width="25px"
+                android:layout_height="30px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="60px"
+                android:background="@mipmap/icon_item_more" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginLeft="60px"
+            android:background="@color/colorlinedarker_gray" />
+
+        <RelativeLayout
+            android:id="@+id/mLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="142px"
+            android:onClick="onClick">
+
+            <TextView
+                android:id="@+id/mTvOrganization"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="52px"
+                android:layout_marginStart="15dp"
+                android:text="个性签名"
+                android:textSize="48px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="52px"
+                android:layout_marginTop="48px"
+                android:layout_toLeftOf="@+id/mTextView_QM"
+                android:text="你的力量很强大"
+                android:textSize="38px" />
+
+            <ImageView
+                android:id="@+id/mTextView_QM"
+                android:layout_width="25px"
+                android:layout_height="30px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="60px"
+                android:background="@mipmap/icon_item_more" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginLeft="60px"
+            android:background="@color/colorlinedarker_gray" />
+
+        <RelativeLayout
+            android:id="@+id/mLayout41"
+            android:layout_width="match_parent"
+            android:layout_height="142px"
+            android:onClick="onClick">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="52px"
+                android:layout_marginStart="15dp"
+                android:text="我的鲜花"
+                android:textSize="48px" />
+
+            <ImageView
+                android:layout_width="40px"
+                android:layout_height="50px"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5px"
+                android:layout_toLeftOf="@+id/xhNum"
+                android:background="@mipmap/icon_middleflower" />
+
+            <TextView
+                android:id="@+id/xhNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5px"
+                android:layout_marginTop="48px"
+                android:layout_toLeftOf="@+id/mTextView_XH"
+                android:text="3"
+                android:textSize="38px" />
+
+            <ImageView
+                android:id="@+id/mTextView_XH"
+                android:layout_width="25px"
+                android:layout_height="30px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="60px"
+                android:background="@mipmap/icon_item_more" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30px"
+            android:background="@color/colorlightbackground" />
+
+        <RelativeLayout
+            android:id="@+id/mLayout6"
+            android:layout_width="match_parent"
+            android:layout_height="142px"
+            android:onClick="onClick">
+
+            <TextView
+                android:id="@+id/mTvHistory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="52px"
+                android:layout_marginTop="48px"
+                android:layout_toRightOf="@+id/mIvHistory"
+                android:text="完善资料"
+                android:textSize="48px" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="25px"
+                android:layout_height="30px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="60px"
+                android:background="@mipmap/icon_item_more" />
+
+            <RelativeLayout
+                android:id="@+id/mLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="142px"
+                android:layout_above="@+id/imageView2"
+                android:layout_alignParentStart="true"
+                android:onClick="onClick">
+
+                <TextView
+                    android:id="@+id/mTextView_MyShoucang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="52px"
+                    android:layout_marginTop="48px"
+                    android:layout_toRightOf="@+id/mImageView_MyShoucang"
+                    android:text="我的收藏"
+                    android:textSize="48px" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/colorlightbackground" />
+
+        <RelativeLayout
+            android:id="@+id/mLayout7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick">
+
+            <TextView
+                android:id="@+id/mycity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="52px"
+                android:layout_marginTop="48px"
+                android:layout_toRightOf="@+id/mIvSetting"
+                android:text="所在城市"
+                android:textSize="48px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mycity"
+                android:layout_marginBottom="20px"
+                android:layout_marginLeft="52px"
+                android:layout_marginTop="28px"
+                android:text="北京" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10px"
+                android:layout_toStartOf="@+id/layut_rightbtn"
+                android:background="@android:color/holo_blue_bright"
+                android:padding="20px"
+                android:text="更新位置"
+                android:textSize="38px" />
+
+            <ImageView
+                android:id="@+id/layut_rightbtn"
+                android:layout_width="25px"
+                android:layout_height="30px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="60px"
+                android:background="@mipmap/icon_item_more"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/colorlightbackground" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick">
+
+            <TextView
+                android:id="@+id/mTextViewLeave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="52px"
+                android:layout_marginTop="48px"
+                android:layout_toRightOf="@+id/mIvSetting"
+                android:text="我的等级"
+                android:textSize="48px" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/mTextViewLeave"
+                android:layout_alignTop="@+id/mTextViewLeave"
+                android:layout_marginLeft="60px"
+                android:layout_toRightOf="@+id/mTextViewLeave"
+                android:background="@mipmap/icon_level_1"
+                android:padding="50px" />
+
+            <TextView
+                android:id="@+id/mTextViewAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mTextViewLeave"
+                android:layout_marginLeft="52px"
+                android:layout_marginTop="20px"
+                android:text="糖龄7天，距离下次升级还剩4天"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="38px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mTextViewAge"
+                android:layout_marginBottom="20px"
+                android:layout_marginLeft="52px"
+                android:layout_marginTop="30px"
+                android:text="什么是糖龄，累计登陆广场舞软件的天数"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="38px" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/colorlightbackground" />
+    </LinearLayout>
+</LinearLayout>
